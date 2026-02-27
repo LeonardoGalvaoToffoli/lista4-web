@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+/* hook: estilização das labels em boxes arredondadas */
+label {
+  display: inline-block;
+  background: #e9ecef;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.timer-box {
+  background: #343a40;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#cpfStatus {
+  font-size: 11px;
+  display: block;
+  margin-top: 4px;
+}

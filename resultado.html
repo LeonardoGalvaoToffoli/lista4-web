@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Resultado do Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Dados Confirmados</h2>
+    <div id="dados"></div>
+    <br>
+    <button onclick="window.location.href='index.html'" style="background: #007bff;">Voltar</button>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const dadosDiv = document.getElementById('dados');
+
+    let conteudo = "";
+    params.forEach((value, key) => {
+      conteudo += `<p><strong>${key.toUpperCase()}:</strong> ${value}</p>`;
+    });
+
+    dadosDiv.innerHTML = conteudo || "Nenhum dado recebido.";
+  </script>
+</body>
+
+</html>
